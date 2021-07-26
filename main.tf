@@ -1,5 +1,3 @@
-data "aws_caller_identity" "current" {}
-
 ## Create CodeStar Host
 resource "aws_codestarconnections_host" "sample-host" {
   name              = var.host_connection_name
