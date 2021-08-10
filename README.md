@@ -4,7 +4,7 @@
 This Terraform module creates an AWS CodeStar host and connection. 
 
 ## Repository directory structure 
-* The deploy directory contains .tf configuration files and `dev.auto.tfvars` to define default variables.
+* The `terraform-aws-codestar/deploy/` directory contains .tf configuration files and `dev.auto.tfvars` to define default variables.
 
 ## Prerequisites
 1. Install Terraform. See [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) for a tutorial. 
