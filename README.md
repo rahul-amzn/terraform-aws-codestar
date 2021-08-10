@@ -58,4 +58,4 @@ This Terraform module creates an AWS CodeStar host and connection.
 6. Open `dev.auto.tfvars` and edit the default values to match your environment.
 
 ## Note 
-Both `aws_codestarconnections_host` and `aws_codestarconnections_connection` resources are created in the state `PENDING`. Authentication with the host provider must be completed in the AWS Console. For details, refer [Set up a pending host](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-setup.html).
+Both `aws_codestarconnections_host` and `aws_codestarconnections_connection` resources are created in `PENDING` status by default. Authentication with the host provider must be completed in the AWS Console. For more information, see [Set up a pending host](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-setup.html).
