@@ -4,7 +4,7 @@
 This Terraform module creates an AWS CodeStar host and connection. 
 
 ## Repository directory structure 
-* The `terraform-aws-codestar/deploy/` directory contains .tf configuration files and `dev.auto.tfvars` to define default variables.
+* The **terraform-aws-codestar/deploy/** directory contains .tf configuration files and **dev.auto.tfvars** to define default variables.
 
 ## Prerequisites
 1. Install Terraform. See [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) for a tutorial. 
@@ -37,7 +37,7 @@ This Terraform module creates an AWS CodeStar host and connection.
 
 ## Deploy the module (Linux or MacOS)
 
-1. Clone the `aws-ia/terraform-aws-codestar` repository.<br>
+1. Clone the **aws-ia/terraform-aws-codestar** repository.<br>
    `git clone https://github.com/aws-ia/terraform-aws-codestar`
 
 2. Change to the module root directory.<br>
@@ -55,7 +55,7 @@ This Terraform module creates an AWS CodeStar host and connection.
 5. Change to the deploy directory.<br>
    `cd ../deploy`
 
-6. Open `dev.auto.tfvars` and edit the default values to match your environment.
+6. Open **dev.auto.tfvars** and edit the default values to match your environment.
 
 ## Note 
-Both `aws_codestarconnections_host` and `aws_codestarconnections_connection` resources are created in `PENDING` status by default. Authentication with the host provider must be completed in the AWS Console. For more information, see [Set up a pending host](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-setup.html).
+Both `aws_codestarconnections_host` and `aws_codestarconnections_connection` resources are created in **PENDING** status by default. Authentication with the host provider must be completed in the AWS Developer Tools console. For more information, see [Set up a pending host](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-setup.html).
