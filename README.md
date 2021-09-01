@@ -3,6 +3,8 @@
 
 This Terraform module creates an AWS CodeStar host and connection. 
 
+[AWS CodeStar]{https://aws.amazon.com/codestar/} allows you to quickly develop, build, and deploy your applications on AWS with unified user interface, enabling you to easily manage your software development activities in one place.
+
 ## Repository directory structure 
 * The **terraform-aws-codestar/deploy/** directory contains .tf configuration files and **dev.auto.tfvars** to define default variables.
 
@@ -56,6 +58,10 @@ This Terraform module creates an AWS CodeStar host and connection.
    `cd ../deploy`
 
 6. Open **dev.auto.tfvars** and edit the default values to match your environment.
+
+7. Run the following command to deploy:
+
+   `terraform apply`  or `terraform apply  -var-file="$HOME/.aws/terraform.tfvars"`
 
 ## Note 
 Both `aws_codestarconnections_host` and `aws_codestarconnections_connection` resources are created in **PENDING** status by default. Authentication with the host provider must be completed in the AWS Developer Tools console. For more information, see [Set up a pending host](https://docs.aws.amazon.com/dtconsole/latest/userguide/connections-host-setup.html).

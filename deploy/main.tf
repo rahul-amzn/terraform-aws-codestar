@@ -9,8 +9,8 @@ terraform {
 }
 
 ## Create Labels
-module "quickstart_codestar_label" {
-  source    = "aws-quickstart/label/aws"
+module "codestar_label" {
+  source    = "aws-ia/label/aws"
   version   = "0.0.2"
   region    = var.region
   namespace = var.namespace
@@ -19,13 +19,13 @@ module "quickstart_codestar_label" {
   name      = var.project_name
   delimiter = var.delimiter
   tags = tomap({
-    "deployed_by" = "quickstart-terraform"
+    "deployed_by" = "terraform"
     "project"     = var.project_name
   })
 }
 
 ## Create CodeStar Resources
-module "qs_codestar" {
+module "codestar" {
   source                    = "../"
   host_connection_name      = var.host_connection_name
   provider_endpoint         = var.provider_endpoint

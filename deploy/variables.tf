@@ -45,7 +45,7 @@ variable "tags" {
 
 ## CodeStar Variables
 variable "host_connection_name" {
-  description = "Name of host to be created, it must be unique in calling AWS account.."
+  description = "Name of host to be created, it must be unique in calling AWS account."
   type        = string
   default     = null
 }
@@ -63,7 +63,7 @@ variable "provider_type" {
 }
 
 variable "codestar_connection_name" {
-  description = "Name of host to be created, it must be unique in calling AWS account.."
+  description = "Name of host to be created, it must be unique in calling AWS account."
   type        = string
   default     = null
 }
